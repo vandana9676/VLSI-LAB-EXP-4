@@ -24,25 +24,6 @@ STEP:7 compare the output with truth table.
 SR FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
-
-
-JK FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
-
-T FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
-
-
-D FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
-
-
-COUNTER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
 ## VERILOG CODE
 ## SR FLIPFLOP:
 module srff(clk,j,k,rst,q );
@@ -70,9 +51,6 @@ case({s,r})
 2'b01:q=1'b0;
 
 2'b10:q=1'b1;
-
-2'b11:q=1'bx;
-
 endcase
 
 end
@@ -84,6 +62,9 @@ endmodule
 
 ![image](https://github.com/vandana9676/VLSI-LAB-EXP-4/assets/165563035/fdda6561-b996-46ed-b355-17da9b8598d6)
 
+JK FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
 ## JK FLIPFLOP:
 module jkff(clk,j,k,rst,q );
 
@@ -121,6 +102,9 @@ end
 endmodule
 ## ## OUTPUT WAVEFORM:
 ![image](https://github.com/vandana9676/VLSI-LAB-EXP-4/assets/165563035/51cfd608-bd4c-4d1d-8f9f-b63ea8e7608d)
+T FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
 ## T FLIPFLOP:
 module tff(clk,reset,t,q);
 
@@ -157,6 +141,11 @@ endmodule
 
 ![image](https://github.com/vandana9676/VLSI-LAB-EXP-4/assets/165563035/b0ffe59e-8cde-459b-97c1-302261aa6a59)
 
+
+D FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
+
 ## D FLIPFLOP:
 module dff(clk,d,rst,q );
 
@@ -181,6 +170,10 @@ end
 endmodule
 ## OUTPUT WAVEFORM:
 ![image](https://github.com/vandana9676/VLSI-LAB-EXP-4/assets/165563035/12cc083e-57c2-46ff-a5a7-007fd77a4c67)
+
+COUNTER
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
 
 ## UPDOWN COUNTER:
 module updown(clk,rst,up_down,count);
